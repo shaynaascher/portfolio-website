@@ -1,3 +1,18 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+
+:root {
+--blue-bg-color: #3d5361;
+--pink-bg-color: #d6b7b5;
+--tan-bg-color: #d4c6bd;
+--creme-bg-color: #f5f0ed;
+  }
+
+/* These are the styles of the Index section */
 .firstwelcomeclass{
-    color: #3d5361;
+    color: var(--blue-bg-color);
+    font-family: 'Signika Negative', sans-serif;
 }
