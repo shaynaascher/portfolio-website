@@ -15,10 +15,23 @@
 .firstwelcomeclass{
     color: var(--blue-bg-color);
     font-family: 'Signika Negative', sans-serif;
+    margin-top: 225px;
 }
+
+#hero {
+    background-color: white;
+  }
+
+  #hero {
+    background-color: white;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
 
 .shaynalogo{
     border: 2px solid var(--blue-bg-color);
+    max-width: 250px;
 }
 
 .buttonshay{
@@ -46,12 +59,13 @@
 }
 
 /* Layout styling */
-.container{
+.container {
     padding: 0 15px;
   }
 
 .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    margin: 25px 0; /* 25px top and bottom, 0 left and right 
+*/
 }
 
 .center {
@@ -62,6 +76,10 @@
     background-color: var(--creme-bg-color);
     text-align: center;
     padding: 10px 0;
+    -webkit-box-shadow: 3px 3px 11px 0px rgba(26, 70, 102, 0.38);
+-moz-box-shadow:    3px 3px 11px 0px rgba(26, 70, 102, 0.38);
+box-shadow:         3px 3px 11px 0px rgba(26, 70, 102, 0.38);
+    position: fixed; display: inline-block; width: 100%;
   }
 
   nav > ul {
@@ -73,6 +91,39 @@
     display: inline-block;
   }
 
+.propic{
+    width: 20%;
+    margin-top: 200px;
+}
+
   img {
-    width: 100%;
+    width: 85%;
   }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+      text-align: unset;
+      padding: 18px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 99px;
+    }
+  }
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
