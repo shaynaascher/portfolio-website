@@ -16,6 +16,14 @@
     color: var(--blue-bg-color);
     font-family: 'Signika Negative', sans-serif;
     margin-top: 225px;
+    text-align: center;
+}
+
+.localopportunities{
+    color: var(--blue-bg-color);
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    display: block;
 }
 
 #hero {
@@ -100,6 +108,12 @@ box-shadow:         3px 3px 11px 0px rgba(26, 70, 102, 0.38);
     width: 85%;
   }
 
+.locationpic{
+    width: 100%;
+max-width: 100%;
+height: auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -114,6 +128,16 @@ Medium devices (640px and larger)
       float: right;
       margin-top: 99px;
     }
+    
+    .col-md-6 {
+        width: 50%;
+      }
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
 /* ==============================
@@ -121,9 +145,42 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 }
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  }
+
+  .cloud-front {
+    animation: 15s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+
+  .cloud-back {
+    animation: 26s cloud-move-reverse infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
