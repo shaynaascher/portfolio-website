@@ -129,9 +129,9 @@ Medium devices (640px and larger)
       margin-top: 99px;
     }
     
-    .col-md-6 {
-        width: 50%;
-      }
+  .col-md-6 {
+    width: 50%;
+    float: left;
   }
 
   .row::after {
@@ -139,6 +139,7 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -150,12 +151,6 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
-}
 
 .sun {
     animation: 4s color-change infinite alternate linear;
