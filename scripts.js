@@ -1,11 +1,15 @@
+$('#heading-text').text('How to create a hamburger menu with jQuery');
+
 function menuToggle() {
-  
-    var x = document.getElementById('myNavToggle');
-    if (x.className === 'navtoggle')
-      x.className += ' responsive';
-    else
-      x.className = 'navtoggle';
-  };
+  var x = document.getElementById('myNavtoggle');
+	var isMobileBreakpoint = window.innerWidth <= 641
+
+  if (x.className === 'navtoggle' && isMobileBreakpoint) {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
   
   /*
   $(document).ready(function() {
